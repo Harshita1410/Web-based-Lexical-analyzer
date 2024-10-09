@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .upload-button {
+            padding: 20px 40px;
+            font-size: 24px;
+            border: none;
+            border-radius: 10px;
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-right:20px;
+        }
+        .upload-button:hover {
+            background-color: #3498db;
+            transform: scale(1.05);
+        }
+        .file-input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lexical Analyzer</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label class="upload-button" for="file">
+            Upload File
+            <input type="file" id="file" name="file" class="file-input" accept=".c, .cpp, .py" required>
+        </label>
+        <button type="submit" class="upload-button">Analyze</button>
+    </form>
+</body>
+</html>
