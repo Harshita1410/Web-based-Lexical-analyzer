@@ -1,7 +1,5 @@
 # Web-Based Lexical Analyzer
 
-# 📌 Overview
-
 This project is a web-based lexical analyzer that processes and tokenizes input code, identifying keywords, operators, literals, and other components of a programming language. It is useful for syntax analysis, compiler design, and educational purposes.
 
 # 🚀 Features
